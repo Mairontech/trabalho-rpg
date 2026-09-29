@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grimório de Fichas — Gerador de Personagens</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="top">
+    <p class="kicker">Sistema de Encantamento &middot; Grimório de Fichas</p>
+    <h1>Gerador de Fichas de RPG</h1>
+    <p>Cada clique invoca um personagem inteiramente novo — retrato, classe, atributos, talentos e uma história tecida ao acaso pelas sombras do grimório.</p>
+  </div>
+
+  <div class="stage">
+    <div class="sheet" id="sheet">
+      <div class="sheet-inner">
+
+        <div class="id-col">
+          <div class="avatar-frame" id="avatarFrame"></div>
+          <div class="id-block-text">
+            <p class="archetype" id="archetype">—</p>
+            <h2 id="charName">—</h2>
+            <p class="tagline" id="tagline">—</p>
+          </div>
+          <div class="level-badge">
+            <div class="lvl-row">
+              <span class="lvl-num" id="lvlNum">1</span>
+              <span class="lvl-label">NÍVEL</span>
+            </div>
+            <div class="xp-bar"><span id="xpFill" style="width:0%"></span></div>
+            <p class="xp-caption" id="xpCaption">0% até o próximo nível</p>
+          </div>
+          <div class="meta-strip" id="metaStrip"></div>
+        </div>
+
+        <div class="detail-col">
+          <div>
+            <p class="section-label">Atributos</p>
+            <div class="attrs" id="attrs"></div>
+          </div>
+
+          <div>
+            <p class="section-label">Talentos &amp; Habilidades</p>
+            <div class="talents" id="talents"></div>
+          </div>
+
+          <div>
+            <p class="section-label">História</p>
+            <div class="lore" id="lore"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="action-row">
+    <button class="roll-btn" id="rollBtn" type="button">Invocar Novo Personagem</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
